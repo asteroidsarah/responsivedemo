@@ -143,18 +143,25 @@ textarea {
     .headerLogo p{
 
         color: #00BFFF;
-        font-size:2em;
+        font-size:1.8em;
         line-height:1em;
         float: left;
         /*outline: 1px blue solid;*/
         display:block;
         margin-bottom:3%;
+        margin-top:0.5%;
     }
 
+    .navIcon{
+         float:left;
+         margin-left:3%;
+        }
+
     .headerSearch {
-        float:left;
-        margin:auto;        
+/*        float:left;
+        margin:auto;  */      
         /*outline: 1px green solid;*/
+        display:none;
     }
 
     .topBox:after{
@@ -180,6 +187,18 @@ textarea {
 
     .nav ul li a{
         text-decoration: none;
+        display:block;
+        text-align:center;
+        color:#fff;
+        background-color:#000;
+        border-bottom:0.2em solid #fff;
+        font-size:1.6em;
+        padding-top:0.5%;
+        padding-bottom:0.5%;
+    }
+
+/*    .nav ul li a{
+        text-decoration: none;
         color: #fff;
         background-color: #000;
         font-size: 1.6em;
@@ -188,7 +207,7 @@ textarea {
         margin-bottom:2.5%;
         float:left;
 
-    }
+    }*/
 
     .content{
         /*outline: 1px orange solid;*/
@@ -249,6 +268,7 @@ textarea {
         }
 
         .headerSearch {
+            display:block;
             float:right;
             margin-top:0.5%;
         }
@@ -261,12 +281,33 @@ textarea {
             width:100%;
         }
 
-        .nav ul li a{
+        .navIcon{
+            display:none;
+        }
+
+
+    .nav ul li{
+        list-style-type: none;
+    }
+
+    .nav ul li a{
+        text-decoration: none;
+        color: #000;
+        font-size: 1.6em;
+        padding: 0% 1.5%;
+        margin-right:2.5%;
+        margin-bottom:2.5%;
+        float:left;
+        background-color:transparent;
+
+    }
+
+/*        .nav ul li a{
             color: #000;
             background-color: transparent;
             padding-left:0;
             font-size:1.5em;
-        }
+        }*/
 
         .content{
             border-left:0.1em solid white;
